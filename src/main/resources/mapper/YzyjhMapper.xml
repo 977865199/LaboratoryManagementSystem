@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.LaboratoryManagementSystem.mapper.YzyjhMapper">
+  <resultMap id="BaseResultMap" type="com.LaboratoryManagementSystem.entity.Yzyjh">
+    <id column="yzyjh_ID" jdbcType="VARCHAR" property="yzyjhId" />
+    <result column="yzyjh_Year" jdbcType="CHAR" property="yzyjhYear" />
+    <result column="yzyjh_Month" jdbcType="CHAR" property="yzyjhMonth" />
+    <result column="yzyjh_XmlbId" jdbcType="VARCHAR" property="yzyjhXmlbid" />
+    <result column="jzyjh_Status" jdbcType="CHAR" property="jzyjhStatus" />
+    <result column="yzyjh_TeacherID" jdbcType="VARCHAR" property="yzyjhTeacherid" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    yzyjh_ID, yzyjh_Year, yzyjh_Month, yzyjh_XmlbId, jzyjh_Status, yzyjh_TeacherID
+  </sql>
+  <select id="selectByExample" parameterType="com.LaboratoryManagementSystem.entity.YzyjhExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from yzyjh
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from yzyjh
+    where yzyjh_ID = #{yzyjhId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from yzyjh
+    where yzyjh_ID = #{yzyjhId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.LaboratoryManagementSystem.entity.YzyjhExample">
+    delete from yzyjh
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.LaboratoryManagementSystem.entity.Yzyjh">
+    insert into yzyjh (yzyjh_ID, yzyjh_Year, yzyjh_Month, 
+      yzyjh_XmlbId, jzyjh_Status, yzyjh_TeacherID
+      )
+    values (#{yzyjhId,jdbcType=VARCHAR}, #{yzyjhYear,jdbcType=CHAR}, #{yzyjhMonth,jdbcType=CHAR}, 
+      #{yzyjhXmlbid,jdbcType=VARCHAR}, #{jzyjhStatus,jdbcType=CHAR}, #{yzyjhTeacherid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.LaboratoryManagementSystem.entity.Yzyjh">
+    insert into yzyjh
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="yzyjhId != null">
+        yzyjh_ID,
+      </if>
+      <if test="yzyjhYear != null">
+        yzyjh_Year,
+      </if>
+      <if test="yzyjhMonth != null">
+        yzyjh_Month,
+      </if>
+      <if test="yzyjhXmlbid != null">
+        yzyjh_XmlbId,
+      </if>
+      <if test="jzyjhStatus != null">
+        jzyjh_Status,
+      </if>
+      <if test="yzyjhTeacherid != null">
+        yzyjh_TeacherID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="yzyjhId != null">
+        #{yzyjhId,jdbcType=VARCHAR},
+      </if>
+      <if test="yzyjhYear != null">
+        #{yzyjhYear,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhMonth != null">
+        #{yzyjhMonth,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhXmlbid != null">
+        #{yzyjhXmlbid,jdbcType=VARCHAR},
+      </if>
+      <if test="jzyjhStatus != null">
+        #{jzyjhStatus,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhTeacherid != null">
+        #{yzyjhTeacherid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.LaboratoryManagementSystem.entity.YzyjhExample" resultType="java.lang.Long">
+    select count(*) from yzyjh
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update yzyjh
+    <set>
+      <if test="record.yzyjhId != null">
+        yzyjh_ID = #{record.yzyjhId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yzyjhYear != null">
+        yzyjh_Year = #{record.yzyjhYear,jdbcType=CHAR},
+      </if>
+      <if test="record.yzyjhMonth != null">
+        yzyjh_Month = #{record.yzyjhMonth,jdbcType=CHAR},
+      </if>
+      <if test="record.yzyjhXmlbid != null">
+        yzyjh_XmlbId = #{record.yzyjhXmlbid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jzyjhStatus != null">
+        jzyjh_Status = #{record.jzyjhStatus,jdbcType=CHAR},
+      </if>
+      <if test="record.yzyjhTeacherid != null">
+        yzyjh_TeacherID = #{record.yzyjhTeacherid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update yzyjh
+    set yzyjh_ID = #{record.yzyjhId,jdbcType=VARCHAR},
+      yzyjh_Year = #{record.yzyjhYear,jdbcType=CHAR},
+      yzyjh_Month = #{record.yzyjhMonth,jdbcType=CHAR},
+      yzyjh_XmlbId = #{record.yzyjhXmlbid,jdbcType=VARCHAR},
+      jzyjh_Status = #{record.jzyjhStatus,jdbcType=CHAR},
+      yzyjh_TeacherID = #{record.yzyjhTeacherid,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.LaboratoryManagementSystem.entity.Yzyjh">
+    update yzyjh
+    <set>
+      <if test="yzyjhYear != null">
+        yzyjh_Year = #{yzyjhYear,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhMonth != null">
+        yzyjh_Month = #{yzyjhMonth,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhXmlbid != null">
+        yzyjh_XmlbId = #{yzyjhXmlbid,jdbcType=VARCHAR},
+      </if>
+      <if test="jzyjhStatus != null">
+        jzyjh_Status = #{jzyjhStatus,jdbcType=CHAR},
+      </if>
+      <if test="yzyjhTeacherid != null">
+        yzyjh_TeacherID = #{yzyjhTeacherid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where yzyjh_ID = #{yzyjhId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.LaboratoryManagementSystem.entity.Yzyjh">
+    update yzyjh
+    set yzyjh_Year = #{yzyjhYear,jdbcType=CHAR},
+      yzyjh_Month = #{yzyjhMonth,jdbcType=CHAR},
+      yzyjh_XmlbId = #{yzyjhXmlbid,jdbcType=VARCHAR},
+      jzyjh_Status = #{jzyjhStatus,jdbcType=CHAR},
+      yzyjh_TeacherID = #{yzyjhTeacherid,jdbcType=VARCHAR}
+    where yzyjh_ID = #{yzyjhId,jdbcType=VARCHAR}
+  </update>
+</mapper>

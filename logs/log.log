@@ -1,0 +1,1059 @@
+2019-12-30 20:59:45.232  INFO 8224 --- [restartedMain] com.example.sens.Application             : Starting Application on DESKTOP-H0S8S4T with PID 8224 (started by 魏国梁 in C:\Users\魏国梁\Desktop\ServerManager)
+2019-12-30 20:59:45.247  INFO 8224 --- [restartedMain] com.example.sens.Application             : No active profile set, falling back to default profiles: default
+2019-12-30 20:59:45.322  INFO 8224 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2609b53: startup date [Mon Dec 30 20:59:45 CST 2019]; root of context hierarchy
+2019-12-30 20:59:46.518  INFO 8224 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.example.sens.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\ServerManager\target\classes\com\example\sens\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/sens/config/MvcConfig.class]]
+2019-12-30 20:59:48.891  INFO 8224 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 20:59:48.920  INFO 8224 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 20:59:48.998  WARN 8224 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 20:59:48.998  WARN 8224 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 20:59:49.030  INFO 8224 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 20:59:49.031  INFO 8224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3710 ms
+2019-12-30 20:59:49.102  INFO 8224 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 20:59:49.107  INFO 8224 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 20:59:49.109  INFO 8224 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 20:59:49.111  INFO 8224 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 20:59:49.190  WARN 8224 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduledTasks': Unsatisfied dependency expressed through field 'serverService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.sens.service.ServerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-30 20:59:49.543 ERROR 8224 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field serverService in com.example.sens.config.ScheduledTasks required a bean of type 'com.example.sens.service.ServerService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.sens.service.ServerService' in your configuration.
+
+2019-12-30 21:01:29.905  INFO 13152 --- [restartedMain] com.example.sens.Application             : Starting Application on DESKTOP-H0S8S4T with PID 13152 (started by 魏国梁 in C:\Users\魏国梁\Desktop\ServerManager)
+2019-12-30 21:01:29.908  INFO 13152 --- [restartedMain] com.example.sens.Application             : No active profile set, falling back to default profiles: default
+2019-12-30 21:01:29.979  INFO 13152 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@684245c3: startup date [Mon Dec 30 21:01:29 CST 2019]; root of context hierarchy
+2019-12-30 21:01:31.204  INFO 13152 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.example.sens.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\ServerManager\target\classes\com\example\sens\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/sens/config/MvcConfig.class]]
+2019-12-30 21:01:32.641  INFO 13152 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:01:32.659  INFO 13152 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:01:32.725  WARN 13152 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:01:32.726  WARN 13152 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:01:32.758  INFO 13152 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:01:32.759  INFO 13152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2780 ms
+2019-12-30 21:01:32.820  INFO 13152 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:01:32.824  INFO 13152 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:01:32.826  INFO 13152 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:01:32.827  INFO 13152 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:01:33.062  INFO 13152 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:01:33.367  INFO 13152 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:01:34.398  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.example.sens.controller.MainController.index()
+2019-12-30 21:01:34.403  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/clear],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.MessageController.clear(javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.404  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/delete],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.MessageController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.404  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/updateStatus],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.MessageController.delete(java.lang.Long,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.405  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/paging],methods=[GET]}" onto public com.example.sens.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.example.sens.entity.Message>> com.example.sens.controller.MessageController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.405  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/unread],methods=[GET]}" onto public com.example.sens.utils.Response<java.lang.Integer> com.example.sens.controller.MessageController.getUnReadSize(javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.406  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/batchRead],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.MessageController.batchRead(javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.408  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/delete],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.ServerController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.409  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/batchRemove],methods=[POST]}" onto public com.example.sens.utils.Response<java.lang.Boolean> com.example.sens.controller.ServerController.batchRemove(java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.409  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/create],methods=[POST]}" onto public com.example.sens.utils.Response com.example.sens.controller.ServerController.createServer(com.example.sens.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.409  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/apply],methods=[POST]}" onto public com.example.sens.utils.Response com.example.sens.controller.ServerController.applyServer(com.example.sens.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.409  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/release],methods=[POST]}" onto public com.example.sens.utils.Response com.example.sens.controller.ServerController.releaseServer(java.lang.Long)
+2019-12-30 21:01:34.410  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/paging],methods=[GET]}" onto public com.example.sens.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.example.sens.entity.Server>> com.example.sens.controller.ServerController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2019-12-30 21:01:34.410  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/logout],methods=[GET]}" onto public com.example.sens.utils.Response com.example.sens.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.411  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public com.example.sens.utils.Response com.example.sens.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.411  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/current-user],methods=[GET]}" onto public com.example.sens.utils.Response com.example.sens.controller.UserController.login(javax.servlet.http.HttpSession)
+2019-12-30 21:01:34.417  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 21:01:34.417  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 21:01:34.521  INFO 13152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@684245c3: startup date [Mon Dec 30 21:01:29 CST 2019]; root of context hierarchy
+2019-12-30 21:01:35.107  INFO 13152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-30 21:01:35.155  INFO 13152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-30 21:01:35.156  INFO 13152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-12-30 21:01:35.156  INFO 13152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-12-30 21:01:35.161  INFO 13152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-12-30 21:01:35.162  INFO 13152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-12-30 21:01:35.173  INFO 13152 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-30 21:01:35.229  INFO 13152 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-12-30 21:01:35.233  INFO 13152 --- [restartedMain] com.example.sens.Application             : Started Application in 5.83 seconds (JVM running for 6.672)
+2019-12-30 21:01:35.237  INFO 13152 --- [restartedMain] com.example.sens.Application             : SENS started at http://localhost:8080
+2019-12-30 21:01:43.999  INFO 13152 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-30 21:01:44.000  INFO 13152 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-30 21:01:44.030  INFO 13152 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-12-30 21:02:00.015 ERROR 13152 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.sens.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.example.sens.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:72) ~[classes/:na]
+	at com.example.sens.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:03:00.004 ERROR 13152 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.sens.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.example.sens.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:72) ~[classes/:na]
+	at com.example.sens.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:04:00.002 ERROR 13152 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.sens.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.example.sens.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:72) ~[classes/:na]
+	at com.example.sens.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:05:00.007 ERROR 13152 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.sens.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.example.sens.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:72) ~[classes/:na]
+	at com.example.sens.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:06:00.001 ERROR 13152 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.sens.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.example.sens.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:72) ~[classes/:na]
+	at com.example.sens.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:07:43.303  INFO 14584 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 14584 (started by 魏国梁 in C:\Users\魏国梁\Desktop\ServerManager)
+2019-12-30 21:07:43.305  INFO 14584 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:07:43.381  INFO 14584 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6819328c: startup date [Mon Dec 30 21:07:43 CST 2019]; root of context hierarchy
+2019-12-30 21:07:44.749  INFO 14584 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\ServerManager\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:07:46.435  INFO 14584 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:07:46.461  INFO 14584 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:07:46.559  WARN 14584 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:07:46.560  WARN 14584 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:07:46.595  INFO 14584 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:07:46.596  INFO 14584 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3215 ms
+2019-12-30 21:07:46.677  INFO 14584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:07:46.683  INFO 14584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:07:46.686  INFO 14584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:07:46.687  INFO 14584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:07:46.940  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.LaboratoryManagementSystem.controller.MainController.index()
+2019-12-30 21:07:46.945  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/clear],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.clear(javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.947  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.947  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/updateStatus],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.948  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/unread],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Integer> com.LaboratoryManagementSystem.controller.MessageController.getUnReadSize(javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.949  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Message>> com.LaboratoryManagementSystem.controller.MessageController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.949  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/batchRead],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.batchRead(javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.952  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.952  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/batchRemove],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.batchRemove(java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.952  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/release],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.releaseServer(java.lang.Long)
+2019-12-30 21:07:46.953  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/apply],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.applyServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.954  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Server>> com.LaboratoryManagementSystem.controller.ServerController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2019-12-30 21:07:46.954  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/create],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.createServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.957  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/current-user],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.957  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.958  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/logout],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-12-30 21:07:46.970  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 21:07:46.971  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 21:07:47.102  INFO 14584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6819328c: startup date [Mon Dec 30 21:07:43 CST 2019]; root of context hierarchy
+2019-12-30 21:07:47.422  INFO 14584 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:07:47.662  INFO 14584 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:07:50.238  INFO 14584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-30 21:07:50.287  INFO 14584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-30 21:07:50.288  INFO 14584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-12-30 21:07:50.289  INFO 14584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-12-30 21:07:50.294  INFO 14584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-12-30 21:07:50.296  INFO 14584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-12-30 21:07:50.309  INFO 14584 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-30 21:07:50.380  INFO 14584 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-12-30 21:07:50.385  INFO 14584 --- [restartedMain] c.L.Application                          : Started Application in 7.709 seconds (JVM running for 8.61)
+2019-12-30 21:07:50.390  INFO 14584 --- [restartedMain] c.L.Application                          : SENS started at http://localhost:8080
+2019-12-30 21:07:57.312  INFO 14584 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-30 21:07:57.313  INFO 14584 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-30 21:07:57.337  INFO 14584 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-12-30 21:08:00.010 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:09:00.002 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:10:00.002 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:11:00.002 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:12:00.002 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:13:00.001 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:14:00.001 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:15:00.001 ERROR 14584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:16:07.337  INFO 14924 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 14924 (started by 魏国梁 in C:\Users\魏国梁\Desktop\LaboratoryManagementSystem)
+2019-12-30 21:16:07.338  INFO 14924 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:16:07.424  INFO 14924 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ab3fc3f: startup date [Mon Dec 30 21:16:07 CST 2019]; root of context hierarchy
+2019-12-30 21:16:08.930  INFO 14924 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:16:08.942  WARN 14924 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.sens.mapper*]' package. Please check your configuration.
+2019-12-30 21:16:10.440  INFO 14924 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:16:10.468  INFO 14924 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:16:10.560  WARN 14924 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:16:10.561  WARN 14924 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:16:10.593  INFO 14924 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:16:10.594  INFO 14924 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3171 ms
+2019-12-30 21:16:10.671  INFO 14924 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:16:10.678  INFO 14924 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:16:10.681  INFO 14924 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:16:10.684  INFO 14924 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:16:10.967  INFO 14924 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:16:11.193  INFO 14924 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:16:12.061  WARN 14924 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduledTasks': Unsatisfied dependency expressed through field 'serverService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+2019-12-30 21:16:12.066  INFO 14924 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-12-30 21:16:12.090 ERROR 14924 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduledTasks': Unsatisfied dependency expressed through field 'serverService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/1131266771.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at com.LaboratoryManagementSystem.Application.main(Application.java:28) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/1131266771.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1436) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1323) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/1131266771.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/1131266771.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1421) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 51 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 64 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:585) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$14b609ff.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$14b609ff$$FastClassBySpringCGLIB$$4583fdc1.invoke(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$14b609ff.sqlSessionFactory(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 65 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:583) ~[mybatis-plus-core-2.1.8.jar:na]
+	... 78 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 80 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 84 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 86 common frames omitted
+
+2019-12-30 21:17:56.330  INFO 9700 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 9700 (started by 魏国梁 in C:\Users\魏国梁\Desktop\LaboratoryManagementSystem)
+2019-12-30 21:17:56.331  INFO 9700 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:17:56.415  INFO 9700 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14639301: startup date [Mon Dec 30 21:17:56 CST 2019]; root of context hierarchy
+2019-12-30 21:17:58.000  INFO 9700 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:17:59.488  INFO 9700 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:17:59.517  INFO 9700 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:17:59.613  WARN 9700 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:17:59.613  WARN 9700 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:17:59.644  INFO 9700 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:17:59.644  INFO 9700 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3229 ms
+2019-12-30 21:17:59.727  INFO 9700 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:17:59.731  INFO 9700 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:17:59.734  INFO 9700 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:17:59.736  INFO 9700 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:17:59.967  INFO 9700 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:18:00.339  INFO 9700 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:18:01.251  WARN 9700 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduledTasks': Unsatisfied dependency expressed through field 'serverService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+2019-12-30 21:18:01.256  INFO 9700 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-12-30 21:18:01.280 ERROR 9700 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduledTasks': Unsatisfied dependency expressed through field 'serverService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/2048938850.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at com.LaboratoryManagementSystem.Application.main(Application.java:28) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverServiceImpl': Unsatisfied dependency expressed through field 'serverMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/2048938850.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMapper' defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\mapper\ServerMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1436) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1323) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/2048938850.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$117/2048938850.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1421) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 51 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 64 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\mapper\MessageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:585) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608) ~[mybatis-plus-core-2.1.8.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$72e76af5.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$72e76af5$$FastClassBySpringCGLIB$$502e8608.invoke(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$72e76af5.sqlSessionFactory(<generated>) ~[mybatisplus-spring-boot-starter-1.0.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	... 65 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:583) ~[mybatis-plus-core-2.1.8.jar:na]
+	... 78 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 80 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.sens.entity.Message'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 84 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.sens.entity.Message
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.4.5.jar:3.4.5]
+	... 86 common frames omitted
+
+2019-12-30 21:20:26.928  INFO 13584 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 13584 (started by 魏国梁 in C:\Users\魏国梁\Desktop\LaboratoryManagementSystem)
+2019-12-30 21:20:26.930  INFO 13584 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:20:27.007  INFO 13584 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@403d307c: startup date [Mon Dec 30 21:20:27 CST 2019]; root of context hierarchy
+2019-12-30 21:20:28.479  INFO 13584 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:20:30.000  INFO 13584 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:20:30.036  INFO 13584 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:20:30.137  WARN 13584 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:20:30.137  WARN 13584 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:20:30.176  INFO 13584 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:20:30.176  INFO 13584 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3169 ms
+2019-12-30 21:20:30.260  INFO 13584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:20:30.265  INFO 13584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:20:30.267  INFO 13584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:20:30.269  INFO 13584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:20:30.500  INFO 13584 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:20:30.921  INFO 13584 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:20:33.019  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.LaboratoryManagementSystem.controller.MainController.index()
+2019-12-30 21:20:33.025  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/clear],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.clear(javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.026  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.027  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/updateStatus],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.028  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/batchRead],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.batchRead(javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.028  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/unread],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Integer> com.LaboratoryManagementSystem.controller.MessageController.getUnReadSize(javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.028  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Message>> com.LaboratoryManagementSystem.controller.MessageController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.031  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.031  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/batchRemove],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.batchRemove(java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.032  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/create],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.createServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.032  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/apply],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.applyServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.032  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Server>> com.LaboratoryManagementSystem.controller.ServerController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2019-12-30 21:20:33.032  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/release],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.releaseServer(java.lang.Long)
+2019-12-30 21:20:33.034  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/logout],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.034  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.034  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/current-user],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(javax.servlet.http.HttpSession)
+2019-12-30 21:20:33.041  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 21:20:33.042  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 21:20:33.188  INFO 13584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@403d307c: startup date [Mon Dec 30 21:20:27 CST 2019]; root of context hierarchy
+2019-12-30 21:20:34.031  INFO 13584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-30 21:20:34.073  INFO 13584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-30 21:20:34.075  INFO 13584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-12-30 21:20:34.075  INFO 13584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-12-30 21:20:34.082  INFO 13584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-12-30 21:20:34.083  INFO 13584 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-12-30 21:20:34.097  INFO 13584 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-30 21:20:34.178  INFO 13584 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-12-30 21:20:34.183  INFO 13584 --- [restartedMain] c.L.Application                          : Started Application in 7.848 seconds (JVM running for 8.748)
+2019-12-30 21:20:34.188  INFO 13584 --- [restartedMain] c.L.Application                          : SENS started at http://localhost:8080
+2019-12-30 21:20:40.640  INFO 13584 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-30 21:20:40.641  INFO 13584 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-30 21:20:40.680  INFO 13584 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2019-12-30 21:21:00.014 ERROR 13584 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:21:34.757  INFO 7268 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 7268 (started by 魏国梁 in C:\Users\魏国梁\Desktop\LaboratoryManagementSystem)
+2019-12-30 21:21:34.758  INFO 7268 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:21:34.829  INFO 7268 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6819328c: startup date [Mon Dec 30 21:21:34 CST 2019]; root of context hierarchy
+2019-12-30 21:21:36.326  INFO 7268 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:21:37.806  INFO 7268 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:21:37.836  INFO 7268 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:21:37.937  WARN 7268 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:21:37.938  WARN 7268 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:21:37.969  INFO 7268 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:21:37.969  INFO 7268 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3140 ms
+2019-12-30 21:21:38.053  INFO 7268 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:21:38.057  INFO 7268 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:21:38.060  INFO 7268 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:21:38.061  INFO 7268 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:21:38.291  INFO 7268 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:21:38.659  INFO 7268 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:21:40.736  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.LaboratoryManagementSystem.controller.MainController.index()
+2019-12-30 21:21:40.742  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/clear],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.clear(javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.743  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.743  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/updateStatus],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.744  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Message>> com.LaboratoryManagementSystem.controller.MessageController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.744  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/unread],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Integer> com.LaboratoryManagementSystem.controller.MessageController.getUnReadSize(javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.744  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/batchRead],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.batchRead(javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.746  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.747  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/batchRemove],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.batchRemove(java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.748  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/release],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.releaseServer(java.lang.Long)
+2019-12-30 21:21:40.748  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Server>> com.LaboratoryManagementSystem.controller.ServerController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2019-12-30 21:21:40.748  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/create],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.createServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.748  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/apply],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.applyServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.750  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/current-user],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.750  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.750  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/logout],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-12-30 21:21:40.757  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 21:21:40.758  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 21:21:40.926  INFO 7268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6819328c: startup date [Mon Dec 30 21:21:34 CST 2019]; root of context hierarchy
+2019-12-30 21:21:41.757  INFO 7268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-30 21:21:41.799  INFO 7268 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-30 21:21:41.801  INFO 7268 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-12-30 21:21:41.802  INFO 7268 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-12-30 21:21:41.808  INFO 7268 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-12-30 21:21:41.810  INFO 7268 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-12-30 21:21:41.824  INFO 7268 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-30 21:21:41.901  INFO 7268 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-12-30 21:21:41.905  INFO 7268 --- [restartedMain] c.L.Application                          : Started Application in 7.753 seconds (JVM running for 8.628)
+2019-12-30 21:21:41.908  INFO 7268 --- [restartedMain] c.L.Application                          : SENS started at http://localhost:8080
+2019-12-30 21:22:00.013 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:22:08.309  INFO 7268 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-30 21:22:08.310  INFO 7268 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-30 21:22:08.338  INFO 7268 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-12-30 21:23:00.002 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:24:00.003 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:25:00.003 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:26:00.001 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:27:00.002 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:28:00.006 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:29:00.003 ERROR 7268 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.LaboratoryManagementSystem.mapper.ServerMapper.findOuttime
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy75.findOuttime(Unknown Source) ~[na:na]
+	at com.LaboratoryManagementSystem.service.impl.ServerServiceImpl.correctServerStatus(ServerServiceImpl.java:68) ~[classes/:na]
+	at com.LaboratoryManagementSystem.config.ScheduledTasks.autoUpdateServerStatus(ScheduledTasks.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0]
+	at java.lang.Thread.run(Thread.java:744) [na:1.8.0]
+
+2019-12-30 21:29:11.930  INFO 8048 --- [restartedMain] c.L.Application                          : Starting Application on DESKTOP-H0S8S4T with PID 8048 (started by 魏国梁 in C:\Users\魏国梁\Desktop\LaboratoryManagementSystem)
+2019-12-30 21:29:11.931  INFO 8048 --- [restartedMain] c.L.Application                          : No active profile set, falling back to default profiles: default
+2019-12-30 21:29:12.013  INFO 8048 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c9e1eea: startup date [Mon Dec 30 21:29:12 CST 2019]; root of context hierarchy
+2019-12-30 21:29:13.504  INFO 8048 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'securityInterceptor' with a different definition: replacing [Generic bean: class [com.LaboratoryManagementSystem.Interceptor.SecurityInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\魏国梁\Desktop\LaboratoryManagementSystem\target\classes\com\LaboratoryManagementSystem\Interceptor\SecurityInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mvcConfig; factoryMethodName=securityInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/LaboratoryManagementSystem/config/MvcConfig.class]]
+2019-12-30 21:29:14.977  INFO 8048 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-30 21:29:15.005  INFO 8048 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-30 21:29:15.098  WARN 8048 --- [restartedMain] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-30 21:29:15.099  WARN 8048 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-30 21:29:15.131  INFO 8048 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-30 21:29:15.131  INFO 8048 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3119 ms
+2019-12-30 21:29:15.217  INFO 8048 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-30 21:29:15.223  INFO 8048 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-12-30 21:29:15.227  INFO 8048 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-30 21:29:15.228  INFO 8048 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-12-30 21:29:15.483  INFO 8048 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-12-30 21:29:15.724  INFO 8048 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-12-30 21:29:17.888  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.LaboratoryManagementSystem.controller.MainController.index()
+2019-12-30 21:29:17.894  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/clear],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.clear(javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.895  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.896  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/updateStatus],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.delete(java.lang.Long,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.896  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/batchRead],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.MessageController.batchRead(javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.897  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Message>> com.LaboratoryManagementSystem.controller.MessageController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.897  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/message/unread],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Integer> com.LaboratoryManagementSystem.controller.MessageController.getUnReadSize(javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.900  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/delete],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.delete(java.lang.Long,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.901  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/batchRemove],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response<java.lang.Boolean> com.LaboratoryManagementSystem.controller.ServerController.batchRemove(java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.902  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/paging],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response<com.baomidou.mybatisplus.plugins.Page<com.LaboratoryManagementSystem.entity.Server>> com.LaboratoryManagementSystem.controller.ServerController.paging(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2019-12-30 21:29:17.902  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/release],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.releaseServer(java.lang.Long)
+2019-12-30 21:29:17.902  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/create],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.createServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.903  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/server/apply],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.ServerController.applyServer(com.LaboratoryManagementSystem.entity.Server,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.905  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/logout],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.905  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.905  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/current-user],methods=[GET]}" onto public com.LaboratoryManagementSystem.utils.Response com.LaboratoryManagementSystem.controller.UserController.login(javax.servlet.http.HttpSession)
+2019-12-30 21:29:17.914  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 21:29:17.915  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 21:29:18.064  INFO 8048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c9e1eea: startup date [Mon Dec 30 21:29:12 CST 2019]; root of context hierarchy
+2019-12-30 21:29:18.951  INFO 8048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-30 21:29:18.989  INFO 8048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-30 21:29:18.990  INFO 8048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-12-30 21:29:18.991  INFO 8048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-12-30 21:29:18.996  INFO 8048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-12-30 21:29:18.997  INFO 8048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-12-30 21:29:19.009  INFO 8048 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-30 21:29:19.081  INFO 8048 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-12-30 21:29:19.086  INFO 8048 --- [restartedMain] c.L.Application                          : Started Application in 7.773 seconds (JVM running for 8.972)
+2019-12-30 21:29:19.089  INFO 8048 --- [restartedMain] c.L.Application                          : SENS started at http://localhost:8080
+2019-12-30 21:30:09.070  INFO 8048 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-30 21:30:09.071  INFO 8048 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-30 21:30:09.090  INFO 8048 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms

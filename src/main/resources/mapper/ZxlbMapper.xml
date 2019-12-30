@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.LaboratoryManagementSystem.mapper.ZxlbMapper">
+  <resultMap id="BaseResultMap" type="com.LaboratoryManagementSystem.entity.Zxlb">
+    <id column="zxlb_ID" jdbcType="VARCHAR" property="zxlbId" />
+    <result column="zxlb_ZyjhID" jdbcType="VARCHAR" property="zxlbZyjhid" />
+    <result column="zxlb_Datetime" jdbcType="TIMESTAMP" property="zxlbDatetime" />
+    <result column="zxlb_Description" jdbcType="VARCHAR" property="zxlbDescription" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    zxlb_ID, zxlb_ZyjhID, zxlb_Datetime, zxlb_Description
+  </sql>
+  <select id="selectByExample" parameterType="com.LaboratoryManagementSystem.entity.ZxlbExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from zxlb
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from zxlb
+    where zxlb_ID = #{zxlbId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from zxlb
+    where zxlb_ID = #{zxlbId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.LaboratoryManagementSystem.entity.ZxlbExample">
+    delete from zxlb
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.LaboratoryManagementSystem.entity.Zxlb">
+    insert into zxlb (zxlb_ID, zxlb_ZyjhID, zxlb_Datetime, 
+      zxlb_Description)
+    values (#{zxlbId,jdbcType=VARCHAR}, #{zxlbZyjhid,jdbcType=VARCHAR}, #{zxlbDatetime,jdbcType=TIMESTAMP}, 
+      #{zxlbDescription,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.LaboratoryManagementSystem.entity.Zxlb">
+    insert into zxlb
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="zxlbId != null">
+        zxlb_ID,
+      </if>
+      <if test="zxlbZyjhid != null">
+        zxlb_ZyjhID,
+      </if>
+      <if test="zxlbDatetime != null">
+        zxlb_Datetime,
+      </if>
+      <if test="zxlbDescription != null">
+        zxlb_Description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="zxlbId != null">
+        #{zxlbId,jdbcType=VARCHAR},
+      </if>
+      <if test="zxlbZyjhid != null">
+        #{zxlbZyjhid,jdbcType=VARCHAR},
+      </if>
+      <if test="zxlbDatetime != null">
+        #{zxlbDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="zxlbDescription != null">
+        #{zxlbDescription,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.LaboratoryManagementSystem.entity.ZxlbExample" resultType="java.lang.Long">
+    select count(*) from zxlb
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update zxlb
+    <set>
+      <if test="record.zxlbId != null">
+        zxlb_ID = #{record.zxlbId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zxlbZyjhid != null">
+        zxlb_ZyjhID = #{record.zxlbZyjhid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zxlbDatetime != null">
+        zxlb_Datetime = #{record.zxlbDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.zxlbDescription != null">
+        zxlb_Description = #{record.zxlbDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update zxlb
+    set zxlb_ID = #{record.zxlbId,jdbcType=VARCHAR},
+      zxlb_ZyjhID = #{record.zxlbZyjhid,jdbcType=VARCHAR},
+      zxlb_Datetime = #{record.zxlbDatetime,jdbcType=TIMESTAMP},
+      zxlb_Description = #{record.zxlbDescription,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.LaboratoryManagementSystem.entity.Zxlb">
+    update zxlb
+    <set>
+      <if test="zxlbZyjhid != null">
+        zxlb_ZyjhID = #{zxlbZyjhid,jdbcType=VARCHAR},
+      </if>
+      <if test="zxlbDatetime != null">
+        zxlb_Datetime = #{zxlbDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="zxlbDescription != null">
+        zxlb_Description = #{zxlbDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where zxlb_ID = #{zxlbId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.LaboratoryManagementSystem.entity.Zxlb">
+    update zxlb
+    set zxlb_ZyjhID = #{zxlbZyjhid,jdbcType=VARCHAR},
+      zxlb_Datetime = #{zxlbDatetime,jdbcType=TIMESTAMP},
+      zxlb_Description = #{zxlbDescription,jdbcType=VARCHAR}
+    where zxlb_ID = #{zxlbId,jdbcType=VARCHAR}
+  </update>
+</mapper>
